@@ -7,43 +7,76 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      line-height: 1.6;
       margin: 0;
       padding: 0;
       color: #333;
     }
+
     header {
       background-color: #2c3e50;
       color: white;
+      display: flex;
+      align-items: center;
       padding: 30px 20px;
-      text-align: center;
     }
+
     header img {
-      width: 120px;
-      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border: 2px solid black;
+      box-shadow: 2px 2px 8px #ccc;
+      margin-right: 30px;
     }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 1.1rem;
+    }
+
     nav {
       background: #34495e;
       text-align: center;
       padding: 10px;
     }
+
     nav a {
       color: white;
       margin: 0 15px;
       text-decoration: none;
     }
+
     section {
       padding: 40px 20px;
       max-width: 900px;
       margin: auto;
     }
+
+    .grey-bg {
+      background-color: #f7f7f7;
+    }
+
+    .white-bg {
+      background-color: #ffffff;
+    }
+
     h2 {
       color: #2c3e50;
     }
+
     footer {
       background: #ecf0f1;
       text-align: center;
       padding: 20px;
+    }
+
+    a {
+      color: #2980b9;
     }
   </style>
 </head>
@@ -51,8 +84,10 @@
 
   <header>
     <img src="photo.jpeg" alt="Profile Photo" />
-    <h1>Dr. Nisha Singh Chauhan</h1>
-    <p>Assistant Professor | CSE | NIT Delhi</p>
+    <div>
+      <h1>Dr. Nisha Singh Chauhan</h1>
+      <p>Assistant Professor | CSE | NIT Delhi</p>
+    </div>
   </header>
 
   <nav>
@@ -63,14 +98,14 @@
     <a href="#contact">Contact</a>
   </nav>
 
-  <section id="about">
+  <section id="about" class="grey-bg">
     <h2>About Me</h2>
     <p>
       I am an Assistant Professor in the Department of Computer Science and Engineering at NIT Delhi. I completed my PhD from IIT Roorkee, where I worked on attention-based deep learning models for traffic flow prediction. My academic journey has been driven by a passion to solve real-world transportation problems using intelligent systems.
     </p>
   </section>
 
-  <section id="research">
+  <section id="research" class="white-bg">
     <h2>Research Interests</h2>
     <ul>
       <li>Intelligent Transportation Systems (ITS)</li>
@@ -81,7 +116,7 @@
     </ul>
   </section>
 
-  <section id="opportunities">
+  <section id="opportunities" class="grey-bg">
     <h2>Research Opportunities</h2>
     <p>
       I welcome motivated undergraduate and postgraduate students to join my research group. You can work on real-world problems such as:
@@ -94,7 +129,7 @@
     <p>If you're interested, please email me with your resume and area of interest.</p>
   </section>
 
-  <section id="publications">
+  <section id="publications" class="white-bg">
     <h2>Selected Publications</h2>
     <ul>
       <li><b>STLTEformer:</b> A Spatio-Temporal Transformer for Traffic Flow Forecasting</li>
@@ -103,7 +138,7 @@
     <p>Full list on <a href="https://scholar.google.com/">Google Scholar</a>.</p>
   </section>
 
-  <section id="contact">
+  <section id="contact" class="grey-bg">
     <h2>Contact</h2>
     <p>Email: nishasinghchauhan [at] nitdelhi.ac.in</p>
     <p>

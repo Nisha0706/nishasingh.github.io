@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Dr. Nisha Singh Chauhan</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     body {
       margin: 0;
@@ -15,9 +16,24 @@
 
     .header {
       padding: 40px 20px 20px;
-      background: #1e3d59;
+      background: #1e3d59; /* Top banner color */
       color: white;
       position: relative;
+    }
+
+    .resume-top {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+
+    .download-btn {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
     }
 
     .profile-photo {
@@ -90,16 +106,6 @@
       color: #fff;
     }
 
-    .download-btn {
-      margin: 10px 0 30px;
-      padding: 10px 20px;
-      background-color: #4CAF50;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      text-decoration: none;
-    }
-
     section {
       padding: 40px 20px;
     }
@@ -146,18 +152,19 @@
 <body>
 
   <div class="header">
+    <div class="resume-top">
+      <a href="resume.pdf" class="download-btn" download>Download Resume</a>
+    </div>
     <img src="photo.jpeg" alt="Profile Photo" class="profile-photo" />
     <div class="name">Dr. Nisha Singh Chauhan, PhD</div>
     <div class="designation">Assistant Professor, NIT Delhi</div>
 
     <div class="social-icons">
-      <a href="https://www.linkedin.com" target="_blank" title="LinkedIn">in</a>
-      <a href="https://www.facebook.com" target="_blank" title="Facebook">f</a>
+      <a href="https://www.linkedin.com" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://www.facebook.com" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
       <a href="https://scholar.google.com" target="_blank" title="Google Scholar">G</a>
       <a href="https://orcid.org" target="_blank" title="ORCID">O</a>
     </div>
-
-    <a href="resume.pdf" class="download-btn" download>Download Resume</a>
   </div>
 
   <nav>

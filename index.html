@@ -14,10 +14,11 @@
     }
 
     .header {
-      padding: 40px 20px 20px;
+      padding: 40px 20px 60px;
       background: #1e3d59;
       color: white;
       position: relative;
+      
     }
 
     .resume-top {
@@ -81,7 +82,7 @@
       transform: scale(1.1);
     }
 
-    nav {
+   /* nav {
       margin-top: -20px;
       background: white;
       padding: 15px;
@@ -95,7 +96,22 @@
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
       position: relative;
       z-index: 10; /* Add this line */
-    }
+    }*/
+    nav {
+  position: absolute;
+  top: calc(100% - 30px); /* Adjusts position to overlap header and next section */
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  padding: 15px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: fit-content;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  z-index: 10;
+}
 
     nav a {
       text-decoration: none;
